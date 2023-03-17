@@ -1,4 +1,4 @@
-#include "model.h"
+#include "warehouse.h"
 
 tw_lpid lpTypeMapper(tw_lpid gid)
 {
@@ -14,7 +14,7 @@ tw_lpid lpTypeMapper(tw_lpid gid)
 
 //Given an LP's GID (global ID)
 //return the PE (aka node, MPI Rank)
-tw_peid model_map(tw_lpid gid)
+tw_peid warehouse_map(tw_lpid gid)
 {
      return (tw_peid) gid / g_tw_nlp;
 }
