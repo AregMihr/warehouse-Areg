@@ -62,7 +62,11 @@ const static double g_robot_charge_time = 12 * 60;
 // All distances in meters
 const static double g_robot_max_mileage = 12 * 60 * 10;
 const static double g_robot_min_mileage = 12 * 60 * 5;
-
+// these numbers can be modified to make model more realistic
+const static double g_robot_load_mileage   = 1;
+const static double g_robot_unload_mileage = 1;
+const static double g_robot_start_mileage  = 1;
+const static double g_robot_round_mileage  = 1;
 #define MAX_CARGO_NUMBER 100005
 #define NO_CARGO 1337
 
@@ -135,6 +139,8 @@ typedef struct
   Direction look_direction;
   int mileage_remain;
   int cargo_num;
+  int del_t;
+  int start_flag;
 } robot_state;
 
 typedef struct
