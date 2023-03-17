@@ -17,10 +17,10 @@ INCLUDE_DIRECTORIES(${ROSS_SOURCE_DIR} ${ROSS_BINARY_DIR})
 
 # All source files for the model
 SET(model_srcs
-	model_main.c
-	model_driver.c
-	model_map.c
-	model.h
+	warehouse_main.c
+	warehouse_driver.c
+	warehouse_map.c
+	warehouse.h
 )
 
 # Set the executable name here: model
