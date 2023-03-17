@@ -1,5 +1,5 @@
 #include "ross.h"
-#include "model.h"
+#include "warehouse.h"
 
 tw_lptype model_lps[] =
 {
@@ -10,7 +10,7 @@ tw_lptype model_lps[] =
     (revent_f) generator_RC_event_handler,
     (commit_f) NULL,
     (final_f) generator_final,
-    (map_f) model_map,
+    (map_f) warehouse_map,
     sizeof(generator_state)
   },
   {
@@ -20,7 +20,7 @@ tw_lptype model_lps[] =
     (revent_f) robot_RC_event_handler,
     (commit_f) NULL,
     (final_f) robot_final,
-    (map_f) model_map,
+    (map_f) warehouse_map,
     sizeof(robot_state)
   },
   { 0 },
