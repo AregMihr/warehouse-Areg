@@ -17,9 +17,9 @@ INCLUDE_DIRECTORIES(${ROSS_SOURCE_DIR} ${ROSS_BINARY_DIR})
 
 # All source files for the model
 SET(model_srcs
+	warehouse_map.c
 	warehouse_main.c
 	warehouse_driver.c
-	warehouse_map.c
 	warehouse.h
 )
 
